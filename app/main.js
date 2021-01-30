@@ -49,7 +49,7 @@ async function run () {
       throw new Error(`No version identified${msg}`)
     }
     
-    const minVersion = core.getInput('minVersion', { required: false }) '0.0.1'
+    const minVersion = core.getInput('minVersion', { required: false })
     if (version < minVersion) {
       core.warning(`Version "${version}" is lower than minimum "${minVersion}"`)
       return
